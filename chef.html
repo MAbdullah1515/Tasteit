@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chef Testiel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .slider {
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        animation: slide 5s infinite alternate;
+        /* z-index: -z-10; */
+        position: absolute;
+      }
+
+      @keyframes slide {
+        0% {
+          background-image: url("./bg_1.jpg");
+        }
+        100% {
+          background-image: url("./bg_2.jpg.webp");
+        }
+      }
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="slider -z-10"></div>
+    <div class="hidden relative z-10 w-full lg:flex lg:visible">
+      <div class="w-1/2 mt-4 text-sm ml-10">
+        <h class="text-gray-600 font-semibold">Phone no:</h>
+        <h class="text-white">+001234567</h>
+        <h class="text-white">or</h>
+        <h class="text-[#6c757d] font-semibold">email us:</h>
+        <h class="text-white">emailsample@gmail.com</h>
+      </div>
+      <div class="w-1/2 flex ml-20 mt-4">
+        <h class="text-gray-600 font-semibold">Mon-Fri/</h>
+        <h class="text-gray-600 font-semibold">9:00-21:00,</h>
+        <h class="text-gray-600 font-semibold">Sat-Sun/</h>
+        <h class="text-gray-600 font-semibold">10:00-20:00</h>
+        <div class="text-sm">
+          <i class="fa-brands fa-facebook text-white ml-2"></i>
+          <i class="fa-brands fa-twitter text-white ml-2"></i>
+          <i class="fa-brands fa-instagram text-white ml-2"></i>
+          <i class="fa-brands fa-dribbble text-white ml-2"></i>
+        </div>
+      </div>
+    </div>
+    <div class="lg:ml-8 lg:mr-8">
+      <nav class="w-full bg-black text-white relative z-10">
+        <div class="py-4 m-4 flex lg:">
+          <div class="font-black lg:text-2xl lg:text-red-600 text-sm">
+            <a class="flex"
+              >Taste.
+              <h1 class="text-white">it</h1>
+            </a>
+          </div>
+          <div
+            class="lg:flex hidden lg:text-sm lg:mt-2 lg:visible lg:ml-[520px]"
+          >
+            <a class="ml-8 text-red-600" href="./index.html">HOME</a>
+            <a class="ml-8" href="./about.html">ABOUT</a>
+            <a class="ml-8" href="./chef.html"> CHEF</a>
+            <a class="ml-8" href="./menu.html"> MENU</a>
+            <a class="ml-8" href="./reservation.html"> RESERVATION</a>
+            <a class="ml-8" href="./blog.html"> BLOG</a>
+            <a class="ml-8" href="./contact.html"> CONTACT</a>
+          </div>
+          <div
+            class="text-[gray] lg:hidden md:ml-[80%] text-sm ml-[70%] boarder-48 group"
+          >
+            <button>MENU</button>
+            <div
+              class="hidden -ml-96 bg-black w-full rounded-md z-10 group-hover:block"
+            >
+              <div
+                class="-mt-20 ml-16 md:-ml-64 flex flex-col w-full float-left text-white p-20 mb-2 text-2xl"
+              >
+                <a class="mb-2 mt-4 text-sm" href="./index.html">HOME</a>
+                <a class="mt-6 mb-2 text-sm" href="./about.html">ABOUT</a>
+                <a class="mt-6 mb-2 text-sm" href="./chef.html"> CHEF</a>
+                <a class="mt-6 mb-2 text-sm" href="./menu.html"> menu</a>
+                <a class="mt-6 mb-2 text-sm" href="./reservation.html"
+                  >RESERVATION</a
+                >
+                <a class="mt-6 mb-2 text-sm" href="./blog.html">BLOG</a>
+                <a class="mt-6 mb-2 text-sm" href="./contact.html">CONTACT</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="flex justify-center lg:mt-48 mt-20">
+      <div
+        class="relative text-center not-italic z-10 w-56 md:w-[400px] md:h-[60px] text-white"
+      >
+        <h1 class="text-center mb-2 text-6xl font-bold">Master Chef</h1>
+        <div>
+          <h1>
+            <a
+              class="text-white font-bold hover:text-red-600"
+              href="./index.html"
+              >HOME></a
+            >
+            <a
+              class="text-white font-bold hover:text-red-600"
+              href="./chef.html"
+              >CHEF></a
+            >
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div class="mt-32 ml-2 mr-2">
+      <div class="m-2 md:m-0 md:py-20 text-center">
+        <h1 class="text-red-600">Chef</h1>
+        <h1 class="text-2xl font-bold -mt-4 md:text-4xl">Our Master Chef</h1>
+      </div>
+      <div class="lg:flex lg:mr-32 lg:ml-32">
+        <div class="md:flex md:ml-4 lg:mr-2 md:mr-4 justify-center">
+          <div class="ml-2 md:block md:ml-4">
+            <div class="mt-20">
+              <img src="./chef-4.jpg.webp" />
+            </div>
+            <div
+              class="py-4 bg-white before:z:16 lg:before:mt-[135px] before:-skew-y-[25deg] before:absolute before:bg-red-600 before:h-[20px] before:w-[30px] before:mt-28 lg:after:mt-[135px] before:ml-2 after:skew-y-[20deg] after:absolute after:bg-red-600 after:h-[20px] after:w-[30px] after:mt-28 after:ml-6"
+            >
+              <div class="absolute z-10 bg-white md:block md:w-96">
+                <h1 class="font-bold">John Gustavo</h1>
+                <h1 class="text-xs">CEO,Co Founder</h1>
+                <h1 class="mr-4 lg:w-[230px] py-4">
+                  I am an ambitious workaholic, but apart from that, pretty
+                  simple person.
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div class="ml-2 md:block md:ml-4">
+            <div class="mt-20">
+              <img src="./chef-2.jpg.webp" />
+            </div>
+            <div
+              class="py-4 bg-white before:z:16 before:-skew-y-[25deg] before:absolute before:bg-red-600 before:h-[20px] before:w-[30px] before:mt-28 lg:before:mt-[135px] before:ml-2 after:skew-y-[20deg] after:absolute after:bg-red-600 after:h-[20px] after:w-[30px] after:mt-28 lg:after:mt-[135px] after:ml-6"
+            >
+              <div class="absolute z-10 bg-white">
+                <h1 class="font-bold">John Gustavo</h1>
+                <h1 class="text-xs">CEO,Co Founder</h1>
+                <h1 class="mr-4 lg:w-[230px] py-4">
+                  I am an ambitious workaholic, but apart from that, pretty
+                  simple person.
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="md:flex lg:mt-0 md:mt-20">
+          <div class="ml-2 md:block md:ml-4">
+            <div class="mt-20">
+              <img src="./chef-3.jpg.webp" />
+            </div>
+            <div
+              class="py-4 bg-white lg:before:mt-[135px] before:z:16 before:-skew-y-[25deg] before:absolute before:bg-red-600 before:h-[20px] before:w-[30px] before:mt-28 before:ml-2 after:skew-y-[20deg] lg:after:mt-[135px] after:absolute after:bg-red-600 after:h-[20px] after:w-[30px] after:mt-28 after:ml-6"
+            >
+              <div class="absolute z-10 bg-white md:w-96">
+                <h1 class="font-bold">John Gustavo</h1>
+                <h1 class="text-xs">CEO,Co Founder</h1>
+                <h1 class="mr-4 lg:w-[230px] py-4">
+                  I am an ambitious workaholic, but apart from that, pretty
+                  simple person.
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div class="ml-2 md:block md:ml-4">
+            <div class="mt-20">
+              <img src="./chef-1.jpg.webp" />
+            </div>
+            <div
+              class="py-4 bg-white before:z:16 lg:before:mt-[135px] before:-skew-y-[25deg] before:absolute before:bg-red-600 before:h-[20px] before:w-[30px] before:mt-28 before:ml-2 after:skew-y-[20deg] after:absolute after:bg-red-600 lg:after:mt-[135px] after:h-[20px] after:w-[30px] after:mt-28 after:ml-6"
+            >
+              <div class="absolute z-10 bg-white">
+                <h1 class="font-bold">John Gustavo</h1>
+                <h1 class="text-xs">CEO,Co Founder</h1>
+                <h1 class="mr-4 lg:w-[230px] py-4">
+                  I am an ambitious workaholic, but apart from that, pretty
+                  simple person.
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="md:flex mt-72 lg:w-full">
+      <div class="w-full md:w-1/2">
+        <div class="bg-red-600 text-center md:ml-20 lg:ml-48 lg:mr-20">
+          <div class="text-2xl text-center text-white font-semibold py-4">
+            BOOK YOUR TABLE
+          </div>
+
+          <div class="py-4">
+            <input
+              type="text"
+              placeholder="Name"
+              class="bg-red-600 border py-2 md:px-4 text-white placeholder:text-white"
+            />
+          </div>
+          <div class="py-4">
+            <input
+              type="email"
+              placeholder="Email"
+              class="bg-red-600 border py-2 md:px-4 text-white placeholder:text-white"
+            />
+          </div>
+          <div class="py-4">
+            <input
+              type="number"
+              placeholder="Phone"
+              class="bg-red-600 border py-2 md:px-4 text-white placeholder:text-white"
+            />
+          </div>
+          <div class="py-4">
+            <input
+              type="date"
+              placeholder="Check In"
+              class="bg-red-600 border py-2 md:px-10 text-white placeholder:text-white"
+            />
+          </div>
+          <div class="py-4">
+            <input
+              type="time"
+              placeholder="Time"
+              class="bg-red-600 border py-2 md:px-14 text-white placeholder:text-white"
+            />
+          </div>
+          <div class="py-4">
+            <input
+              type="text"
+              placeholder="Name"
+              class="bg-red-600 border py-2 md:px-4 text-white placeholder:text-white"
+            />
+            <i class="fa-solid fa-chevron-down text-white mt-4 -ml-8"></i>
+          </div>
+          <div class="py-4">
+            <button class="border py-4 text-sm md:px-4 bg-white w-[215px]">
+              BooK Your Table Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="w-1/2 lg:mt-0 md:mt-28 ml-10 lg:ml-0 md:ml-6">
+        <div class="">
+          <img
+            src="./about.jpg.webp"
+            class="z-0 relative h-96 md:max-h-full md:mt-0"
+          />
+          <div class="z-10 -mt-96 absolute">
+            <h class="text-2xl text-red-600">About</h>
+            <h1 class="text-2xl font-bold">Welcome to Taste.it</h1>
+            <p class="text-sm flex justify-center : py-10 w-72">
+              On her way she met a copy. The copy warned the Little Blind Text,
+              that where it came from it would have been rewritten a thousand
+              times and everything that was left from its origin would be the
+              word "and" and the Little Blind Text should turn around and return
+              to its own, safe country. A small river named Duden flows by their
+              place and supplies it with the necessary regelialia. It is a
+              paradisematic country, in which roasted parts of sentences fly
+              into your mouth.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-black mt-16 lg:flex">
+      <div class="md:flex md:w-full md:ml-10 lg:ml-14 lg:w-[500px]">
+        <div class="p-4 text-left md:w-1/2 lg:mb-4 lg:ml-4">
+          <h1 class="text-white py-4 md:py-6 text-2xl font-bold">Taste.It</h1>
+          <h2 class="text-gray-300 py-4">
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts. Separated they
+            live in Bookmarksgrove
+          </h2>
+          <h3 class="text-red-600 flex space-x-4 text-2xl">
+            <i class="fa-brands fa-twitter" class="text-red-600"></i>
+            <i class="fa-brands fa-facebook" class=""></i>
+            <i class="fa-brands fa-instagram"></i>
+          </h3>
+        </div>
+
+        <div class="p-4 lg:ml- lg:w-[500px]">
+          <h1 class="text-white md:mt-6 font-bold text-2xl">OPEN HOURS</h1>
+          <ul class="flex">
+            <li class="py-6">
+              <p class="text-white mt-2">Monday</p>
+              <p class="text-white mt-2">Tuesday</p>
+              <p class="text-white mt-2">Wednesday</p>
+              <p class="text-white mt-2">Thursday</p>
+              <p class="text-white mt-2">Friday</p>
+              <p class="text-white mt-2">Saturday</p>
+              <p class="text-white mt-2">Sunday</p>
+            </li>
+            <li class="ml-10 py-6">
+              <p class="text-gray-300 mr-10 mt-2">9:00 - 24:00</p>
+              <p class="text-gray-300 mr-10 mt-2">9:00 - 24:00</p>
+              <p class="text-gray-300 mr-10 mt-2">9:00 - 24:00</p>
+              <p class="text-gray-300 mr-10 mt-2">9:00 - 24:00</p>
+              <p class="text-gray-300 mr-10 mt-2">9:00 - 24:00</p>
+              <p class="text-gray-300 mr-10 mt-2">9:00 - 24:00</p>
+              <p class="text-gray-300 mr-2 mt-2">Closed</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="md:flex md:ml-6 md:mr-6 lg:mt-6 lg:-ml-20">
+        <div class="m-4 lg:w-[500px]">
+          <h1 class="text-white text-2xl font-bold">INSTAGRAM</h1>
+          <div class="py-6">
+            <div class="md:flex">
+              <img src="./insta-1.jpg.webp" class="h-28 md:w-24 w-full" />
+              <img src="./insta-2.jpg.webp" class="h-28 md:w-24 w-full" />
+              <img src="./insta-3.jpg.webp" class="h-28 md:w-24 w-full" />
+            </div>
+            <div class="flex">
+              <img src="./insta-4.jpg.webp" class="w-24" />
+              <img src="./insta-5.jpg.webp" class="w-24" />
+              <img src="./insta-6.jpg.webp" class="w-24" />
+            </div>
+          </div>
+        </div>
+        <div class="m-4 md:ml-6 md:mr-6 md:-mt-2 lg:-ml-48">
+          <div class="py-6">
+            <h1 class="text-2xl font-bold text-white">NEWSLETTER</h1>
+          </div>
+          <div>
+            <h1 class="text-sm text-gray-300 lg:w-72 py-2">
+              Far far away, behind the word mountains, far from the countries.
+            </h1>
+          </div>
+          <div class="py-4">
+            <input
+              type="email"
+              placeholder="Enter Email Address"
+              class="py-4 rounded text-white placeholder:py-2 placeholder:text-center bg-[#495057] w-full lg:w-72"
+            />
+          </div>
+          <div class="py-2">
+            <button class="bg-red-600 w-full lg:w-72 py-4 rounded text-white">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-red-600 -mt-4">
+      <h1 class="text-white text-center text-sm py-4">
+        Copyright ©2024 All rights reserved | This template is made with
+        <i class="fa-solid fa-heart"></i> by Colorlib
+      </h1>
+    </div>
+  </body>
+</html>
